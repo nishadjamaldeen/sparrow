@@ -1,0 +1,83 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.tester.controller.Page1" xmlns="sap.m" xmlns:vbm="sap.ui.vbm" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="false" title="Page Title" showFooter="false" showNavButton="false" enableScrolling="false">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="539px" top="26px">
+                        <layout:control>
+                            <Image src="/webapp/resources/ERP_Logo_TM_Clean.jpg" height="200px" width="200px" visible="true" densityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="436px" top="289px">
+                        <layout:control>
+                            <DateRangeSelection placeholder="Select Date Range" width="auto" displayFormat="medium" enabled="true" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="434px" top="359px">
+                        <layout:control>
+                            <TimePicker placeholder="Start Time" width="auto" displayFormat="HH:mm:ss" minutesStep="1" secondsStep="1" enabled="true" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="436px" top="430px">
+                        <layout:control>
+                            <TimePicker placeholder="End Time" width="auto" displayFormat="HH:mm:ss" minutesStep="1" secondsStep="1" enabled="true" visible="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="418px" top="499px">
+                        <layout:control>
+                            <vbm:GeoMap legendVisible="true" scaleVisible="true" width="400px" height="400px" initialPosition="30;10" centerPosition="0;0" initialZoom="2" zoomlevel="2" enableAnimation="true" refMapLayerStack="Default" disableZoom="false" disablePan="false" class="sapUiSmallMargin">
+                                <vbm:resources/>
+                                <vbm:legend/>
+                                <vbm:vos>
+                                    <vbm:Spots>
+                                        <vbm:items>
+                                            <vbm:Spot position="-119.083855;37.386051;0" alignment="5"/>
+                                        </vbm:items>
+                                    </vbm:Spots>
+                                    <vbm:Circles>
+                                        <vbm:items/>
+                                    </vbm:Circles>
+                                    <vbm:Routes>
+                                        <vbm:items/>
+                                    </vbm:Routes>
+                                </vbm:vos>
+                            </vbm:GeoMap>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="616px" top="951px">
+                        <layout:control>
+                            <Button text="Submit" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="721px" top="363px">
+                        <layout:control>
+                            <CheckBox text="Rhinos" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="721px" top="428px">
+                        <layout:control>
+                            <CheckBox text="Poachers" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="722px" top="290px">
+                        <layout:control>
+                            <CheckBox text="Elephants" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="auto" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>
