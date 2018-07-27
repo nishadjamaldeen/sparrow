@@ -112,8 +112,11 @@
         });
 
         const spawn = require("child_process").spawn;
-        const pyproc = spawn('python', ["../../ImageClassification/sparrow.py"])
+        const pyproc = spawn('python', ["../../ImageClassification/sparrow.py",  req.body.imgName ]);
 
+        pyproc.stdout.on('data', (data) =>{
+
+        })
         bucket.save(function(err, result){
             if(err){
                 console.log(err);
@@ -144,6 +147,17 @@
         });
 
     };
+
+    module.exports.updateItems = function(req, res){
+        
+
+        Bucket.update({'img' : req.body.img}, {$set : {'items' : req.body.items}}, function(err, result){
+            if(err){
+                console.log(err);
+                return res.status(500).send(err);
+            } return res.json(result);
+        })
+    }
 
     module.exports.updateName = function(req, res){
         if(!req.body.id){

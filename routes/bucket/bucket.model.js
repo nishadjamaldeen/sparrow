@@ -12,6 +12,7 @@
             long: String,
             timestamp: Number,
             img: String,
+            items: String,
         }, {"collection": "bucket"}
     );
 

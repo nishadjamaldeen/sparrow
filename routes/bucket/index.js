@@ -35,6 +35,7 @@
     router.post('/update/name/', controller.updateName);
 //    router.post('/update/volume/', controller.updateVolume);
     router.post('/update/location/', controller.updateLocation);
+    router.post('/update/items/', controller.updateItems);
 
     router.delete('/:id', controller.delete);
 
