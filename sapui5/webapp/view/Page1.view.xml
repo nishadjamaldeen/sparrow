@@ -1,0 +1,56 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="resources.controller.Page1" xmlns="sap.m"
+	xmlns:core="sap.ui.core" xmlns:layout="sap.ui.commons.layout">
+	<Page showHeader="false" title="Project Sparrow" showFooter="false" showNavButton="false" enableScrolling="false">
+			<layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout:positions>
+					<layout:PositionContainer left="553px" top="301px">
+						<layout:control>
+							<DateRangeSelection placeholder="Enter Date Range" width="200px" displayFormat="medium" enabled="true" visible="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="439px" top="354px">
+						<layout:control>
+							<TimePicker placeholder="Enter Start Time" width="200px" displayFormat="HH:mm:ss" minutesStep="1" secondsStep="1" enabled="true"
+								visible="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="654px" top="355px">
+						<layout:control>
+							<TimePicker width="200px" displayFormat="HH:mm:ss" minutesStep="1" secondsStep="1" enabled="true" visible="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="870px" top="346px">
+						<layout:control>
+							<CheckBox text="All Day" selected="true" editable="true" enabled="true" visible="true" width="100.3125px" textDirection="Inherit"
+								wrapping="false" useEntireWidth="true"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="553px" top="409px">
+						<layout:control>
+							<MultiComboBox placeholder="Must Include..." editable="true" enabled="true" width="200px" valueState="None" maxWidth="100%">
+								<items>
+									<core:Item text="Elephants" enabled="true" key="Elephants"/>
+									<core:Item text="Rhinos" enabled="true" key="Rhinos"/>
+									<core:Item text="Humans" enabled="true" key="Humans"/>
+									<core:Item text="Anomalies" enabled="true" key="Anomalies"/>
+								</items>
+							</MultiComboBox>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="358px" top="104px">
+						<layout:control>
+							<Title text="Project Sparrow" titleStyle="H1" width="500px" textAlign="Center" visible="true" wrapping="false" class="sapUiLargeMargin"/>
+						</layout:control>
+					</layout:PositionContainer>
+					<layout:PositionContainer left="588px" top="501px">
+						<layout:control>
+							<Button text="Search" type="Default" iconFirst="true" width="134.1999969482422px" enabled="true" visible="true" iconDensityAware="false"/>
+						</layout:control>
+					</layout:PositionContainer>
+				</layout:positions>
+			</layout:AbsoluteLayout>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

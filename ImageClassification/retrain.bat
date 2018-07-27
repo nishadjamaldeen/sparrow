@@ -1,0 +1,1 @@
+python retrain.py --image_dir ./ImageSetOne --output_labels retrainedModels/outputLabels.txt --saved_model_dir retrainedModels/outputGraph --how_many_traning_steps 100

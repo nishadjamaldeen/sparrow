@@ -1,0 +1,6 @@
+field 
+buildings 
+elephants 
+roads 
+shrubs 
+vehicles 
